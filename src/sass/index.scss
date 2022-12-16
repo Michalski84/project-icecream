@@ -1,2 +1,28 @@
-@import './common';
-@import './example';
+// @import './common';
+// @import './example';
+
+
+@import './base/common';
+@import './base/container';
+
+@import './components/buttons';
+@import './components/cursor';
+@import './components/customer-slider';
+@import './components/descriptions';
+@import './components/extra-modals';
+@import './components/header-menu';
+@import './components/headings';
+@import './components/icons';
+@import './components/img';
+@import './components/items';
+@import './components/links';
+@import './components/lists';
+
+@import './layouts/hero-header';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer-service';
+@import './layouts/contacts';
+@import './layouts/footer';
