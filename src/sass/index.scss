@@ -1,5 +1,5 @@
 // @import './common';
-// @import './example';
+@import './example';
 
 @import './base/common';
 @import './base/container';
@@ -25,3 +25,7 @@
 @import './layouts/customer-review';
 @import './layouts/contacts';
 @import './layouts/footer';
+
+@import './utils/colors';
+@import './utils/fonts';
+@import './utils/visual-hidden';
