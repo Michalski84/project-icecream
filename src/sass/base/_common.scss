@@ -1,1 +1,26 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+    --t-duration: 250ms;
+    --t-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  body {
+         
+      // font-family: "Titan One", cursive;
+    font-family:"DM Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style-type: none;
+  }
