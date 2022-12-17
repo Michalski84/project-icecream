@@ -18,13 +18,16 @@
 
 .products {
     margin-top: 121px;
-    margin-inline: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .products_title {
     font-family: "Titan One";
     font-weight: 400;
-    color: #d41443;
+    color: var(--eleventh);
     text-align: center;
     font-size: 34px;
     line-height: 1.15;
@@ -54,6 +57,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.products_block:last-child {
+    margin-bottom: 98px;
 }
 
 .products_block.coffee {
@@ -107,7 +114,7 @@
     background-size: contain;
     content: url(../images/Products/ice-coffee-mobile-1x.png);
     position: absolute;
-    left: -61px;
+    left: -63px;
     top: -112px;
     display: block;
 }
@@ -120,7 +127,7 @@
     background-size: contain;
     content: url(../images/Products/milkshakes-mobile-1x.png);
     position: absolute;
-    left: -61px;
+    left: -53px;
     top: -112px;
     display: block;
 }
@@ -128,4 +135,11 @@
 .products_dots-icon {
     fill: #ffffff;
     margin-block: 30px;
+}
+
+.products_arrow-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    display: block;
 }
