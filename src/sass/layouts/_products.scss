@@ -1,7 +1,7 @@
 
 .container {
-    width: 100%;
-    margin: 0 auto;
+    // width: 100%;
+    // margin: 0 auto;
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -49,8 +49,11 @@
     height: 485px;
     background: #ffb8ca;
     border-radius: 24px;
-    margin-bottom: 17px;
+    margin-bottom: 130px;
     margin-inline: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .products_block.coffee {
@@ -91,7 +94,38 @@
     background-size: contain;
     content: url(../images/Products/icecream-mobile-1x.png);
     position: absolute;
-    left: 17px;
+    left: -61px;
     top: -112px;
     display: block;
+}
+
+.products_card_name.coffee {
+    position: relative;
+}
+
+.products_card_name.coffee::before {
+    background-size: contain;
+    content: url(../images/Products/ice-coffee-mobile-1x.png);
+    position: absolute;
+    left: -61px;
+    top: -112px;
+    display: block;
+}
+
+.products_card_name.milkshake {
+    position: relative;
+}
+
+.products_card_name.milkshake::before {
+    background-size: contain;
+    content: url(../images/Products/milkshakes-mobile-1x.png);
+    position: absolute;
+    left: -61px;
+    top: -112px;
+    display: block;
+}
+
+.products_dots-icon {
+    fill: #ffffff;
+    margin-block: 30px;
 }
