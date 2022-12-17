@@ -1,9 +1,11 @@
 // @import './common';
 @import './example';
 
+
 @import './base/common';
 @import './base/container';
-@import './base/container-gallery';
+@import './utils/colors';
+@import './utils/fonts';
 
 @import './components/buttons';
 @import './components/cursor';
@@ -28,6 +30,5 @@
 @import './layouts/contacts';
 @import './layouts/footer';
 
-@import './utils/colors';
-@import './utils/fonts';
+
 @import './utils/visual-hidden';
