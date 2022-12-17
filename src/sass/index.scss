@@ -1,11 +1,10 @@
+@import './utils/colors';
+@import './utils/fonts';
 // @import './common';
 @import './example';
 
-
 @import './base/common';
 @import './base/container';
-@import './utils/colors';
-@import './utils/fonts';
 
 @import './components/buttons';
 @import './components/cursor';
@@ -26,9 +25,7 @@
 @import './layouts/advantages';
 @import './layouts/gallery';
 @import './layouts/customer-review';
-// customer-review jest zmienieony!!!!
 @import './layouts/contacts';
 @import './layouts/footer';
-
 
 @import './utils/visual-hidden';
