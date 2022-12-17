@@ -3,6 +3,7 @@ width: 320px;
 height: 502px;
 background-color: $color-eighth;
 position:relative;
+margin: 0px;
 
 &__logo{
     width: 199px;
@@ -12,7 +13,24 @@ position:relative;
     left:20px;
     cursor: pointer;
 }
+&__title{
+    width: 218px;
+    height: 106px;
+    font-family:'titan one';
+    font-size: 26px;
+    color: $color-first;
+    position: absolute;
+    top:193px;
+    left:20px;
+    z-index: 999;
 }
+
+&__standout{
+        font-size: 48px;
+        color: $color-eleventh;
+    }
+}
+
 .hamburger{
     position: absolute;
     top:25px;
@@ -22,15 +40,19 @@ position:relative;
     background-color: transparent;
     display: flex;
 
-    
-
-
-    &__icon{
-        margin:0px;
+    &__button{
+        background-color: transparent;
+        padding:0;
         width: 20px;
         height: 12px;
+        fill:currentColor;
     }
-
+ 
 }
 
-
+.headerIcecream{
+    position: absolute;
+    bottom:0px;
+    left:36px;
+    z-index: 1;
+}
