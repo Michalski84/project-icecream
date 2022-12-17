@@ -15,6 +15,11 @@
         width: 1200px;
     }
 }
+.contacts {
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 12px;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -42,7 +47,7 @@
     align-items: center;
 }
 .contacts__item--box {
-    background-color: #FFFFFF;
+    background-color: $color-first;
     box-shadow: 0px 8px 30px 0px #D414431A;
     width: 220px;
     height: 427px;
@@ -52,10 +57,8 @@
 }
 .contacts__item-title {
     text-transform: uppercase;
-    font-family: "DM Sans";
-    font-size: 12px;
-    color: #FFFFFF;
-    background-color:  #F0D1A5;
+    color: $color-first;
+    background-color:  $color-sixth;
     margin: 0;
     width: 80px;
     height: 16px;
@@ -65,9 +68,8 @@
     justify-content: center;
 }
 .contacts__item-title-green {
-    font-size: 12px;
-    color: #FFFFFF;
-    background-color: #C2E297;
+    color: $color-first;
+    background-color: $color-fourteenth;
     margin: 0;
     width: 130px;
     height: 16px;
@@ -77,23 +79,18 @@
     justify-content: center;
 }
 .contacts-item--city {
-    font-family: "DM Sans";
-    font-size: 12px;
-    font-weight: 500;
     margin-bottom: 10px;
     margin-top: 25px;
 }
 .contacts-item--destription {
     margin-top: 0;
     padding-bottom: 25px;
-    border-bottom: 1px solid #E1E1E1;
-    font-size: 12px;
+    border-bottom: 1px solid $color-nineteen;
     line-height: 1.5;
-    color: #907E82;    
+    color: $color-fifteenth;    
 }
 .contacts-item--open-hours {
     margin-top: 25px;
-    font-size: 12px;
     line-height: 1.86;
 }
 .contacts-item--day {
@@ -102,24 +99,23 @@
 .contacts-item--hours {
     margin: 0;
     margin-bottom: 10px;
-    color: #FFA5BA;
+    color: $color-ninth;
 }
 .contacts-item--hours:last-child {
     margin-bottom: 0;
     padding-bottom: 25px;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid $color-nineteen;
 }
 .contacts__item--contact-us {
     margin-top: 25px;
-    font-size: 12px;
     min-height: 37px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .contacts__item--mail {
-    color: #907E82;
+    color: $color-fifteenth;
 }
 .contacts__item--tel {
-    color: #907E82;
+    color: $color-fifteenth;
 }
