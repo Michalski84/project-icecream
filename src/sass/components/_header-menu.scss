@@ -41,7 +41,7 @@
         line-height: 1.28;
         color: $color-first;
         text-decoration: none;
-
+        transition: fill var(--t-duration) var(--t-timing-function);
         &:hover,
         &:focus {
             color: $color-eleventh;
@@ -56,8 +56,19 @@
         padding-top: 11px;
         text-decoration: none;
     }
-
+    
     &__list {
         margin-top: 19px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .header-menu {
+        width: 254px;
+    }
+    }
+    @media screen and (min-width: 1280px) {
+        .header-menu {
+            display: none;
+        }
+    }
