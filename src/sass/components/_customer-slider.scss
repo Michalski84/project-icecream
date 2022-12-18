@@ -1,0 +1,28 @@
+.reviews {
+    &__description {
+        width: 280px;
+        height: 308px;
+        padding-inline: 50px;
+        padding-top: 43px;
+        background-color: $color-second;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.58;
+        text-decoration: underline solid $color-nineteen;
+        text-underline-offset: 5px;
+        &::before {
+            content: "";
+            width: 54px;
+            height: 40px;
+            background-size: contain;
+            background-image: url();
+        }
+    }
+    &__item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
