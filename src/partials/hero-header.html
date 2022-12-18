@@ -17,7 +17,29 @@
         <p class="header__standout">PASSION</p>
     </div>
     <div class="headerIcecream">
-        <img src="./images/Hero_header/main-icecream-mobile-1x.png" title="Ice Cream" alt="photo of icecream" />
+        <img class="headerIcecream__photo"  title="Ice Cream" alt="photo of icecream"
+        src="./images/Hero_header/main-icecream-mobile-1x.png"
+        srcset="
+        ./images/Hero_header/main-icecream-1x.png 538w,
+        ./images/Hero_header/main-icecream-2x.png 1076w,
+        ./images/Hero_header/main-icecream-tablet-1x.png 324w,
+        ./images/Hero_header/main-icecream-tablet-2x.png 648w,
+        ./images/Hero_header/main-icecream-mobile-1x.png 284w,
+        ./images/Hero_header/main-icecream-mobile-2x.png 568w
+        " 
+        sizes="(min-width: 1280px) 538px, (min-width: 768px) 324px, (min-width: 480px) 284px, 100vw"
+        />
+    </div>
+    <div >
+        <ul class="headerButtons">
+            <li>
+                <button class="headerButtons__item" type="button">Products</button>
+            </li>  
+            <li>
+                <button class="headerButtons__item headerButtons__item--second" type="button">How it's made?</button>
+            </li>  
+           
+        </ul>
     </div>
     </div>
     
