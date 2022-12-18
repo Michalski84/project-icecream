@@ -4,11 +4,17 @@ height: 502px;
 background-color: $color-eighth;
 position:relative;
 margin: 0px;
-padding-inline: 20px;
+// padding-inline: 20px;
+
 
 @media screen and (min-width: 768px){
-    padding-inline: 34px;
+    
     height: 399px;
+}
+
+@media screen and (min-width: 1280px){
+    // padding-inline: 34px;
+    height: 665px;
 }
 
 
@@ -24,6 +30,10 @@ padding-inline: 20px;
     @media screen and (min-width: 768px) {
         top:37px;
         left:34px;  
+    }
+    @media screen and (min-width: 1280px) {
+        top:37px;
+        left:46px;  
     }
 }
 &__title{
@@ -43,6 +53,12 @@ padding-inline: 20px;
         width: 162px; 
         font-size:22px;
     }
+    @media screen and (min-width: 1280px) {
+        top: 171px;
+        left: 115px; 
+        width: 277px; 
+        font-size:38px;
+    }
 }
 
 &__standout{
@@ -51,6 +67,9 @@ padding-inline: 20px;
 
         @media screen and (min-width: 768px){
             font-size: 34px;
+        }
+        @media screen and (min-width: 1280px){
+            font-size: 58px;
         }
     }
 }
@@ -83,6 +102,9 @@ padding-inline: 20px;
     @media screen and (min-width: 768px){
         right: 137px;
     }
+    @media screen and (min-width: 1280px){
+        right: 267px;
+    }
 
 
     &__photo{
@@ -94,11 +116,18 @@ padding-inline: 20px;
     gap:8px;
     position: absolute;
     bottom:160px;
+    left:34px;
     z-index: 2;
     cursor: pointer;
 
     @media screen and (min-width: 768px) {
         bottom:173px; 
+        left:34px;
+    }
+    @media screen and (min-width: 1280px) {
+        bottom: 292px;
+        left:115px; 
+        gap:15px;
     }
 
     &__item{
@@ -115,6 +144,13 @@ padding-inline: 20px;
         padding-inline: 15px;
         background-color: $color-eleventh;
 
+        @media screen and (min-width: 1280px) {
+            height: 40px; 
+            font-size: 14px;
+            padding-inline: 20px;
+            
+        }  
+
         &--second{
             background-color: $color-first;
             color:$color-eleventh;
@@ -127,5 +163,82 @@ padding-inline: 20px;
 
 
 
+    }
+}
+.headerGirl{
+    position: absolute;
+    bottom:0px;
+    right:34px;
+    z-index: 1;
+
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+    @media screen and (min-width: 1280px){
+        right:109px;
+    }
+
+    &__photo{
+        display: block;
+    }
+}
+.headerMilk{
+    position: absolute;
+    bottom:28px;
+    left:34px;
+    z-index: 1;
+
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+    @media screen and (min-width: 1280px){
+        bottom:45px;
+    left:77px;
+    }
+
+    &__photo{
+        display: block;
+    }
+}
+.headerLorem{
+font-family: 'DM Sans';    
+font-size: 8px;
+line-height: 1.5;
+color: $color-first;
+width: 121px;
+height: 48px;
+position: absolute;
+left:154px;
+bottom:59px;
+
+@media screen and (max-width: 767px){
+    display:none;
+}
+@media screen and (min-width: 1280px){
+    left:295px;
+    bottom:102px;
+    width: 200px;
+    height: 78px;
+    font-size: 14px;
+
+}
+}
+.headerArrow{
+    position: absolute;
+    bottom:34px;
+    left:154px;
+    z-index: 1;
+
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+    @media screen and (min-width: 1280px){
+        
+        bottom:56px;
+        left:295px;
+    }
+
+    &__photo{
+        display: block;
     }
 }
