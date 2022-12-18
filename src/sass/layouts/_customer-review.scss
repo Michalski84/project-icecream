@@ -1,4 +1,4 @@
-.container {
+.customer-review__container {
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -64,7 +64,7 @@
   position: relative;
 }
 
-.quote-icon {
+.customer-review__quote-icon {
   height: 40px;
   width: 54px;
   fill: $color-nineteen;
@@ -72,14 +72,3 @@
   top: 28px;
   left: 61px;
 }
-
-/* .customer-rewiew__text::after {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 1px;
-  background: black;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */

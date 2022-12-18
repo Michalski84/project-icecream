@@ -307,3 +307,35 @@ bottom:59px;
         right:115px;
     }
 }
+
+.headerNumbers{
+    display: flex;
+    flex-direction: column;
+    gap:13px;
+    height: 44px;
+    position: absolute;
+    top:96px;
+    right:44px;
+    
+
+    &__item{
+        font-weight: 400;
+        font-size: 28px;
+        font-family: 'titan one';
+        color: $color-eleventh;
+        z-index: 7;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $color-first;
+            z-index:100;
+            right: -3px;
+        }
+   
+    }
+}
