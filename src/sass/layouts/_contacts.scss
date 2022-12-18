@@ -1,0 +1,121 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+.contacts {
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 12px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.link {
+    text-decoration: none;
+    color: initial;
+}
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts__item--box {
+    background-color: $color-first;
+    box-shadow: 0px 8px 30px 0px #D414431A;
+    width: 220px;
+    height: 427px;
+    margin: 20px 50px;
+    border-radius: 24px;
+    padding: 42px 21px 43px 20px;
+}
+.contacts__item-title {
+    text-transform: uppercase;
+    color: $color-first;
+    background-color:  $color-sixth;
+    margin: 0;
+    width: 80px;
+    height: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.contacts__item-title-green {
+    color: $color-first;
+    background-color: $color-fourteenth;
+    margin: 0;
+    width: 130px;
+    height: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.contacts-item--city {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.contacts-item--destription {
+    margin-top: 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $color-nineteen;
+    line-height: 1.5;
+    color: $color-fifteenth;    
+}
+.contacts-item--open-hours {
+    margin-top: 25px;
+    line-height: 1.86;
+}
+.contacts-item--day {
+    margin: 0;
+}
+.contacts-item--hours {
+    margin: 0;
+    margin-bottom: 10px;
+    color: $color-ninth;
+}
+.contacts-item--hours:last-child {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $color-nineteen;
+}
+.contacts__item--contact-us {
+    margin-top: 25px;
+    min-height: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contacts__item--mail {
+    color: $color-fifteenth;
+}
+.contacts__item--tel {
+    color: $color-fifteenth;
+}
