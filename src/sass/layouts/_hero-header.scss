@@ -4,11 +4,17 @@ height: 502px;
 background-color: $color-eighth;
 position:relative;
 margin: 0px;
-padding-inline: 20px;
+
+
 
 @media screen and (min-width: 768px){
-    padding-inline: 34px;
+    
     height: 399px;
+}
+
+@media screen and (min-width: 1280px){
+    
+    height: 665px;
 }
 
 
@@ -24,6 +30,10 @@ padding-inline: 20px;
     @media screen and (min-width: 768px) {
         top:37px;
         left:34px;  
+    }
+    @media screen and (min-width: 1280px) {
+        top:37px;
+        left:46px;  
     }
 }
 &__title{
@@ -43,6 +53,12 @@ padding-inline: 20px;
         width: 162px; 
         font-size:22px;
     }
+    @media screen and (min-width: 1280px) {
+        top: 171px;
+        left: 115px; 
+        width: 277px; 
+        font-size:38px;
+    }
 }
 
 &__standout{
@@ -52,6 +68,9 @@ padding-inline: 20px;
         @media screen and (min-width: 768px){
             font-size: 34px;
         }
+        @media screen and (min-width: 1280px){
+            font-size: 58px;
+        }
     }
 }
 
@@ -59,17 +78,24 @@ padding-inline: 20px;
     position: absolute;
     top:25px;
     right: 20px;
-    width: 20px;
-    height: 12px;
-    background-color: transparent;
-    display: flex;
+    z-index: 6;
+    
 
+    @media screen and (min-width: 768px){
+        top:52px;
+        right:224px;
+    }
+    @media screen and (min-width: 1280px){
+        display:none;
+    }
     &__button{
         background-color: transparent;
-        padding:0;
+        display: flex;
+        padding: 0px;
         width: 20px;
         height: 12px;
-        fill:currentColor;
+        border: none;
+        cursor: pointer;
     }
  
 }
@@ -83,6 +109,9 @@ padding-inline: 20px;
     @media screen and (min-width: 768px){
         right: 137px;
     }
+    @media screen and (min-width: 1280px){
+        right: 267px;
+    }
 
 
     &__photo{
@@ -94,11 +123,18 @@ padding-inline: 20px;
     gap:8px;
     position: absolute;
     bottom:160px;
+    left:34px;
     z-index: 2;
-    cursor: pointer;
+    
 
     @media screen and (min-width: 768px) {
         bottom:173px; 
+        left:34px;
+    }
+    @media screen and (min-width: 1280px) {
+        bottom: 292px;
+        left:115px; 
+        gap:15px;
     }
 
     &__item{
@@ -114,18 +150,160 @@ padding-inline: 20px;
         color: $color-first;
         padding-inline: 15px;
         background-color: $color-eleventh;
+        cursor: pointer;
+
+        @media screen and (min-width: 1280px) {
+            height: 40px; 
+            font-size: 14px;
+            padding-inline: 20px;
+            
+        }  
 
         &--second{
             background-color: $color-first;
             color:$color-eleventh;
+
+            &:hover,
+            &:focus{
+                background-color:$color-fifth;
+                
+            }
 
             @media screen and (max-width: 767px){
 
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
         }
+    }
+}
+.headerGirl{
+    position: absolute;
+    bottom:0px;
+    right:34px;
+    z-index: 1;
 
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+    @media screen and (min-width: 1280px){
+        right:109px;
+    }
 
+    &__photo{
+        display: block;
+    }
+}
+.headerMilk{
+    position: absolute;
+    bottom:28px;
+    left:34px;
+    z-index: 1;
 
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+    @media screen and (min-width: 1280px){
+        bottom:45px;
+    left:77px;
+    }
+
+    &__photo{
+        display: block;
+    }
+}
+.headerLorem{
+font-family: 'DM Sans';    
+font-size: 8px;
+line-height: 1.5;
+color: $color-first;
+width: 121px;
+height: 48px;
+position: absolute;
+left:154px;
+bottom:59px;
+
+@media screen and (max-width: 767px){
+    display:none;
+}
+@media screen and (min-width: 1280px){
+    left:295px;
+    bottom:102px;
+    width: 200px;
+    height: 78px;
+    font-size: 14px;
+
+}
+}
+.headerArrow{
+    position: absolute;
+    bottom:34px;
+    left:154px;
+    z-index: 1;
+
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+    @media screen and (min-width: 1280px){
+        
+        bottom:56px;
+        left:295px;
+    }
+
+    &__photo{
+        display: block;
+    }
+}
+.headerNav{
+    display:flex;
+    gap:35px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top:50px;
+    left:355px;
+    z-index: 5;
+
+    @media screen and (max-width: 1279px){
+        display:none;
+    }
+
+    &__item{
+        text-decoration: none;
+        color:$color-first;
+        
+        &:hover,
+        &:focus{
+            color:$color-eleventh;
+        }
+    }
+   
+}
+.headerButton-BuyNow{
+    background-color: $color-first;
+    border-radius: 20px;
+    border: none;
+    height: 44px;
+    padding-inline: 37px;
+    display: flex;
+    gap:12px;
+    align-items: center;
+    color: $color-eleventh;
+    font-weight: 700;
+    position: absolute;
+    top:38px;
+    right: 34px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+        background-color:$color-fifth;
+    }
+
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+    @media screen and (min-width: 1280px){
+        right:115px;
     }
 }
