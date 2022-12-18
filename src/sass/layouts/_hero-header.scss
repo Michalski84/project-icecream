@@ -78,17 +78,22 @@ margin: 0px;
     position: absolute;
     top:25px;
     right: 20px;
-    width: 20px;
-    height: 12px;
-    background-color: transparent;
-    display: flex;
+    z-index: 6;
 
+    @media screen and (min-width: 768px){
+        top:52px;
+        right:224px;
+    }
+    @media screen and (min-width: 1280px){
+        display:none;
+    }
     &__button{
         background-color: transparent;
-        padding:0;
+        display: flex;
+        padding: 0px;
         width: 20px;
         height: 12px;
-        fill:currentColor;
+        border: none;
     }
  
 }
@@ -118,7 +123,7 @@ margin: 0px;
     bottom:160px;
     left:34px;
     z-index: 2;
-    cursor: pointer;
+    
 
     @media screen and (min-width: 768px) {
         bottom:173px; 
@@ -143,6 +148,7 @@ margin: 0px;
         color: $color-first;
         padding-inline: 15px;
         background-color: $color-eleventh;
+        cursor: pointer;
 
         @media screen and (min-width: 1280px) {
             height: 40px; 
@@ -155,14 +161,17 @@ margin: 0px;
             background-color: $color-first;
             color:$color-eleventh;
 
+            &:hover,
+            &:focus{
+                background-color:$color-fifth;
+                
+            }
+
             @media screen and (max-width: 767px){
 
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
         }
-
-
-
     }
 }
 .headerGirl{
@@ -240,5 +249,59 @@ bottom:59px;
 
     &__photo{
         display: block;
+    }
+}
+.headerNav{
+    display:flex;
+    gap:35px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top:50px;
+    left:355px;
+    z-index: 5;
+
+    @media screen and (max-width: 1279px){
+        display:none;
+    }
+
+    &__item{
+        text-decoration: none;
+        color:$color-first;
+        
+        &:hover,
+        &:focus{
+            color:$color-eleventh;
+        }
+    }
+   
+}
+.headerButton-BuyNow{
+    background-color: $color-first;
+    border-radius: 20px;
+    border: none;
+    height: 44px;
+    padding-inline: 37px;
+    display: flex;
+    gap:12px;
+    align-items: center;
+    color: $color-eleventh;
+    font-weight: 700;
+    position: absolute;
+    top:38px;
+    right: 34px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+        background-color:$color-fifth;
+    }
+
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+    @media screen and (min-width: 1280px){
+        right:115px;
     }
 }
