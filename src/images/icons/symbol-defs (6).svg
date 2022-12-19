@@ -35,4 +35,7 @@
 <symbol id="icon-X-close-modal" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke:var(--color5, #fff)" stroke-width="2" d="m2.519 2 26.963 28M2 29.481 30 2.518"/></symbol>
 
+<symbol id="icon-white-arrow" viewBox="0 0 26 32">
+<path fill="none" stroke="#fff" style="stroke:var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8"/></symbol>
+
 </defs></svg>
