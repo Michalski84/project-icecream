@@ -1,31 +1,41 @@
-  <!-- id=how-made" to jest link z menu - nie usuwać -->
+<!-- id=how-made" to jest link z menu - nie usuwać -->
 
 <section id="how-made" class="about">
   <div class="about__titles">
-    <p class="about__title--first">tradition and love</p>
-    <h2 class="about__title--second">how it’s made?</h2>
+    <p class="about__titles--first">tradition and love</p>
+    <h2 class="about__titles--second">how it’s made?</h2>
   </div>
-  <img
-    src="./images/About/cow-mobile-1x.png"
-    alt="cow"
-    width="280px"
-    height="279px"
-  />
-  <div class="about__descriptions">
-  <p class="about__description--first">
-    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-    cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
-    fringilla.
-  </p>
-  <p class="about__description--second">
-    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-    Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit
-    ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. Aliquam
-    erat volutpat. Aenean accumsan.
-  </p>
-  <p class="about__description--third">
-    Aliquam erat volutpat. Aenean accumsan.
-  </p>
+  <div class="about__display">
+    <img
+      class="about__img"
+      alt="Cow"
+      src="./images/About/cow-1x.png"
+      srcset="
+        ./images/About/cow-1x.png         516w,
+        ./images/About/cow-2x.png        1032w,
+        ./images/About/cow-tablet-1x.png  340w,
+        ./images/About/cow-tablet-2x.png  680w,
+        ./images/About/cow-mobile-1x.png  280w,
+        ./images/About/cow-mobile-2x.png  560w
+      "
+      sizes="(min-width: 1280px) 516px, (min-width: 768px) 340px, (min-width: 320px) 280x, 100vw"
+    />
+    <div class="about__descriptions">
+      <p class="about__descriptions--first">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+        cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+        justo fringilla.
+      </p>
+      <p class="about__descriptions--second">
+        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+        tincidunt. Aliquam erat volutpat. Aenean accumsan.
+      </p>
+      <p class="about__descriptions--second">
+        Aliquam erat volutpat. Aenean accumsan.
+      </p>
+    </div>
   </div>
   <button class="about__button" type="button">
     <p class="about__button--label">Read more</p>
