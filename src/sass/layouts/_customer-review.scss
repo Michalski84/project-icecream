@@ -1,23 +1,13 @@
-.customer-review__container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+.customer-review {
+  margin-top: 80px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    margin-top: 121px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    margin-top: 123px;
   }
-}
-
-.customer-review {
-  margin: 80px 20px;
 }
 
 .customer-review__customer-image {
@@ -29,7 +19,7 @@
 
 .customer-review__text-box {
   display: flex;
-  position: relative;
+  margin: 0 auto;
 
   justify-content: center;
   align-items: flex-start;
@@ -38,11 +28,13 @@
   background-color: $color-second;
 
   @media screen and (min-width: 768px) {
+    width: 100%;
     height: 164px;
     background-color: rgba($color-second, 0.4);
   }
 
   @media screen and (min-width: 1200px) {
+    width: 100%;
     height: 138px;
     background-color: $color-second;
   }
@@ -80,6 +72,7 @@
 .customer-review__background-box {
   width: 180px;
   height: 250px;
+  border: none;
 
   top: 29px;
   background-image: repeating-linear-gradient(
@@ -94,7 +87,7 @@
     height: 106px;
     width: 544px;
 
-    top: 32px;
+    top: 29px;
     background-image: repeating-linear-gradient(
       to bottom,
       rgba($color-second, 0.4),
@@ -109,8 +102,8 @@
     top: 29px;
     background-image: repeating-linear-gradient(
       to bottom,
-      rgba($color-second, 0.4),
-      rgba($color-second, 0.4) 47%,
+      $color-second,
+      $color-second 47%,
       $color-nineteen 49%
     );
   }
@@ -150,14 +143,6 @@
   }
 }
 
-.customer-review__dot-list {
-  display: flex;
-  align-items: center;
-  padding-top: 49px;
-  width: 157px;
-  position: relative;
-}
-
 .customer-review__quote-icon {
   height: 40px;
   width: 54px;
@@ -187,4 +172,34 @@
   display: block;
   width: 14px;
   height: 14px;
+}
+
+.customer-review__dot-list {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 86px;
+}
+
+.customer-review__customer-name {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-top: 14px;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    margin-top: 14px;
+    margin-bottom: 35px;
+  }
 }
