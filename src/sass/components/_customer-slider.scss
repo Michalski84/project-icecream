@@ -1,0 +1,11 @@
+.customer-slider {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__tekst {
+        font-weight: 500;
+        margin-top: 14px;
+    }
+}
