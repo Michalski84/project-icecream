@@ -1,23 +1,13 @@
-.customer-review__container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+.customer-review {
+  margin-top: 80px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    margin-top: 121px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    margin-top: 123px;
   }
-}
-
-.customer-review {
-  margin: 80px 20px;
 }
 
 .customer-review__customer-image {
@@ -29,8 +19,7 @@
 
 .customer-review__text-box {
   display: flex;
-  position: relative;
-
+  margin: 0 auto;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
@@ -39,11 +28,13 @@
 
   @media screen and (min-width: 768px) {
     height: 164px;
+    width: 620px;
     background-color: rgba($color-second, 0.4);
   }
 
   @media screen and (min-width: 1200px) {
     height: 138px;
+    width: 100%;
     background-color: $color-second;
   }
 }
@@ -57,18 +48,74 @@
   text-align: center;
   color: $color-sixteenth;
 
-  display: flex;
-  align-items: center;
-  padding-top: 49px;
+  width: 143px;
+  height: 211px;
+
   width: 157px;
-  position: relative;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    height: 83px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 52px;
+    width: 750px;
+    font-size: 16px;
+  }
 }
 
-.customer-review__quote-icon {
-  height: 40px;
+.customer-review__background-box {
+  width: 180px;
+  height: 250px;
+
+  top: 55px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    $color-second,
+    $color-second 11%,
+    $color-nineteen 12%
+  );
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    height: 106px;
+    width: 544px;
+
+    top: 55px;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba($color-second, 0.4),
+      rgba($color-second, 0.4) 31%,
+      $color-nineteen 33%
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 78px;
+    width: 822px;
+    top: 29px;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba($color-second, 0.4),
+      rgba($color-second, 0.4) 47%,
+      $color-nineteen 50%
+    );
+  }
+}
+
+.customer-review__background-box::before {
+  display: block;
   width: 54px;
-  fill: $color-nineteen;
+  height: 40px;
+  content: '';
+
+  background-image: url(../images/icons/cuote-customer.svg);
+  background-repeat: no-repeat;
+  background-size: 54px 40px;
   position: absolute;
-  top: 28px;
-  left: 61px;
+  left: -7px;
+  top: -15px;
 }
