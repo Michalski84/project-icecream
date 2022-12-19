@@ -79,8 +79,7 @@ screen and (min-resolution: 3dppx) {
 }
 @media screen and (min-width: 1200px) {
     .contacts__item {
-        flex-direction: row;
-        justify-content: space-between;
+        gap: 31px;
         margin-top: 132px;
         margin-bottom: 86px;
     }
@@ -126,11 +125,6 @@ screen and (min-resolution: 3dppx) {
         height: 28px;
         width: 73px;
         align-items: center;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .contacts__item-title {
-        height: auto;
     }
 }
 .contacts__item-title-green {
