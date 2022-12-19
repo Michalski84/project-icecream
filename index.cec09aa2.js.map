@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAEC,UAAUC,OAAM,WAChBF,EAAE,WAAWG,MAAM,CACjBC,MAAM,GAEV","sources":["src/slider.js"],"sourcesContent":["$(document).ready(function () {\n  $('.slider').slick({\n    dots: true, \n  });\n});"],"names":["$","document","ready","slick","dots"],"version":3,"file":"index.cec09aa2.js.map"}
