@@ -140,6 +140,10 @@ margin: 0px;
         gap:15px;
     }
 
+    &__link{
+        text-decoration: none;
+    }
+
     &__item{
         font-family: 'DM Sans';
         font-size: 8px;
@@ -376,6 +380,7 @@ bottom:59px;
             
             @media screen and (min-width: 1280px){
                 font-size: 14px;
+                right:17px;
             }
         }
        
