@@ -2,17 +2,20 @@
     position: relative;
     margin: 0 auto;
 }
-.slick-arrow {
-    position: absolute;
-    top: 420px;
-    background: url(../images/Customer_Reviews/slider.png) 0 0 / 100% no-repeat;
-    width: 12px;
-    height: 12px;
+
+.slick-dots li button:before {
+    background-color: black;
+    border-radius: 50%;
+
 }
-.slick-dots {
-    position: absolute;
-    top: 440;
+.slick-active button {
+    display: none;
 }
-.customer-review__customer-name {
-    margin-top: 50px;
+.slick-active button:before {
+    content: '';
+    background-image: url(../images/icons/house-customer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px; 
 }
