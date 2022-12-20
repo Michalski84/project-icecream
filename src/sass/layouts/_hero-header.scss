@@ -7,6 +7,7 @@ margin: 0px;
 
 
 
+
 @media screen and (min-width: 768px){
     
     height: 399px;
@@ -45,7 +46,7 @@ margin: 0px;
     position: absolute;
     top:193px;
     left:20px;
-    z-index: 999;
+    z-index: 10;
 
     @media screen and (min-width: 768px) {
         top:102px;
@@ -315,6 +316,7 @@ bottom:59px;
     }
 }
 
+
 .headerNumbers{
     display: flex;
     flex-direction: column;
@@ -338,14 +340,16 @@ bottom:59px;
         right: 97px;
         font-size: 46px;
     }
-    
-
+     
     &__cafes{
         position: relative;
         // border: 1px solid black;
         text-align: center;
         width: 51px;
         height: 43px;
+        z-index: 6;
+        
+            
 
         @media screen and (min-width: 1280px){
             width: 92px;
@@ -361,12 +365,12 @@ bottom:59px;
             border-radius: 50%;
             background-color: $color-first;
             right: 0px;
+            
 
             @media screen and (min-width: 1280px){
                 width: 30px;
                 height: 30px
-            }
-            
+            }      
         }
 
         &::before{
@@ -374,13 +378,14 @@ bottom:59px;
             color:$color-first;
             position: absolute;
             font-size: 8px;
+            line-height: 1,25;
             bottom: 0px;
             right: 10px;
             font-family: 'DM Sans';  
             
             @media screen and (min-width: 1280px){
                 font-size: 14px;
-                right:17px;
+                right:18px;
             }
         }
        
@@ -405,12 +410,11 @@ bottom:59px;
             border-radius: 50%;
             background-color: $color-first;
             right: 0px;
-
+            
             @media screen and (min-width: 1280px){
                 width: 30px;
                 height: 30px
             }
-
         }
 
         &::before{
