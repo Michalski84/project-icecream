@@ -1,21 +1,22 @@
 .slider {
-    position: relative;
     margin: 0 auto;
 }
 
 .slick-dots li button:before {
-    background-color: black;
+    background-color: $color-sixteenth;
     border-radius: 50%;
 
 }
-.slick-active button {
-    display: none;
-}
-.slick-active button:before {
+
+.slick-dots li.slick-active button:before {
     content: '';
+    opacity: 1;
     background-image: url(../images/icons/house-customer.svg);
+    background-color: $color-first;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 15px;
-    height: 15px; 
+}
+
+.customer-review__dots-icon {
+    margin-top: 15px;
 }
