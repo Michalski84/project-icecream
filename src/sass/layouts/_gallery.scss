@@ -10,13 +10,21 @@
         width: 768px;
     }
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
     }
 }
 .gallery_box{
     display:flex;
-    margin-inline:auto;
-    width: 100%;
+    margin-inline:0;
+    // max-width: 100%;
+    width: 1600px;
     // height: 48px;
+    // padding-top:97px;
+
+}
+.team-image{
+       margin-top:97px;
+    max-width: 100%;
+    // width: 1600px;
    }
