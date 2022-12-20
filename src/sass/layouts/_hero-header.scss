@@ -79,15 +79,16 @@ margin: 0px;
     top:25px;
     right: 20px;
     z-index: 6;
-    
+
+    @media screen and (min-width: 1280px){
+        display:none;
+        }
 
     @media screen and (min-width: 768px){
         top:52px;
         right:224px;
     }
-    @media screen and (min-width: 1280px){
-        display:none;
-    }
+    
     &__button{
         background-color: transparent;
         display: flex;
@@ -96,6 +97,8 @@ margin: 0px;
         height: 12px;
         border: none;
         cursor: pointer;
+
+       
     }
  
 }
@@ -312,19 +315,39 @@ bottom:59px;
     display: flex;
     flex-direction: column;
     gap:13px;
-    height: 44px;
     position: absolute;
     top:96px;
     right:44px;
+    align-items: right;
+    font-size: 28px;
+    font-family: 'titan one';
+    color: $color-eleventh;
+   
+
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+
+    @media screen and (min-width: 1280px){
+        gap:15px;
+        top:156px;
+        right: 97px;
+        font-size: 46px;
+    }
     
 
-    &__item{
-        font-weight: 400;
-        font-size: 28px;
-        font-family: 'titan one';
-        color: $color-eleventh;
-        z-index: 7;
+    &__cafes{
         position: relative;
+        // border: 1px solid black;
+        text-align: center;
+        width: 51px;
+        height: 43px;
+
+        @media screen and (min-width: 1280px){
+            width: 92px;
+            height: 76px
+        }
+        
 
         &::after{
             content: "";
@@ -333,9 +356,71 @@ bottom:59px;
             height: 16px;
             border-radius: 50%;
             background-color: $color-first;
-            z-index:100;
-            right: -3px;
+            right: 0px;
+
+            @media screen and (min-width: 1280px){
+                width: 30px;
+                height: 30px
+            }
+            
         }
-   
+
+        &::before{
+            content:"cafes";
+            color:$color-first;
+            position: absolute;
+            font-size: 8px;
+            bottom: 0px;
+            right: 10px;
+            font-family: 'DM Sans';  
+            
+            @media screen and (min-width: 1280px){
+                font-size: 14px;
+            }
+        }
+       
+    }
+    &__foodtracks{
+        position: relative;
+        width: 51px;
+        height: 43px;
+        // border: 1px solid black;
+        text-align: center;
+
+        @media screen and (min-width: 1280px){
+        width: 92px;
+        height: 76px
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $color-first;
+            right: 0px;
+
+            @media screen and (min-width: 1280px){
+                width: 30px;
+                height: 30px
+            }
+
+        }
+
+        &::before{
+            content:"food tracks";
+            color:$color-first;
+            position: absolute;
+            font-size: 8px;
+            bottom: 0px;
+            left: -8px;
+            font-family: 'DM Sans';   
+            
+            @media screen and (min-width: 1280px){
+                font-size: 14px;
+                
+            }
+        }
     }
 }
