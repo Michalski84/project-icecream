@@ -398,3 +398,177 @@ bottom:59px;
 
 
 
+
+
+
+
+
+.backdrop {
+    position: relative;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+    transition-property: scale, opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    z-index: 10;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    scale: 0;
+}
+
+
+
+
+.box {
+    position: absolute;
+    background-image: repeating-linear-gradient(-45deg,
+                $color-third,
+                $color-third 20px,
+                $color-fourteenth 20px,
+                $color-twentyone 40px);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    padding-bottom: 20px;
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+
+    &__title {
+        font-family: 'Titan One';
+        text-align: center;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.03em;
+        color: $color-twelfth;
+    }
+
+    &__btn {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        top: 8px;
+        right: 8px;
+        background-color: $color-eleventh;
+        border: none;
+        cursor: pointer;
+    }
+    &__submit {
+        background-color: $color-first;
+    }
+    &__icon {
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .box {
+        max-height: 610px;
+        max-width: 528px;
+    }
+}
+
+
+.form {
+    display: flex;
+    position: relative;
+    height: 40px;
+    border: 1px solid var(--fieldset);
+    border-radius: 4px;
+    margin-block: 28px;
+    align-items: center;
+    background-color: $color-first;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    // &__svg {
+    //     margin-right: 12px;
+    //     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // }
+
+    &__input {
+        border: 0;
+        outline: 0;
+        width: 90%;
+    }
+
+    &__title {
+        position: absolute;
+        font-size: 16px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--label-box);
+        top: -18px;
+        left: 0;
+    }
+
+    &__textarea {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        border: 0;
+        outline: 0;
+        resize: none;
+        padding: 12px 16px;
+    }
+
+    &--comment {
+        position: relative;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+}
+
+.accept {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.16;
+        line-height: 1.71;
+        color: var(--label-box);
+        position: relative;
+    }
+
+    &__text a {
+        color: $color-eleventh;
+        font-size: 16px;
+        line-height: 1.16;
+        line-height: 1.71;
+    }
+    &__button {
+        background-color: $color-eleventh;
+    }
+}
+
+.accept__button span {
+    color: $color-first;
+}
