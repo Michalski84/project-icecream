@@ -203,3 +203,26 @@
     margin-bottom: 35px;
   }
 }
+
+.slider {
+  margin: 0 auto;
+}
+
+.slick-dots li button:before {
+  background-color: $color-sixteenth;
+  border-radius: 50%;
+
+}
+
+.slick-dots li.slick-active button:before {
+  content: '';
+  opacity: 1;
+  background-image: url(../images/icons/house-customer.svg);
+  background-color: $color-first;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.customer-review__dots-icon {
+  margin-top: 15px;
+}
