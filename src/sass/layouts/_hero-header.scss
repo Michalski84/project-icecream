@@ -316,120 +316,85 @@ bottom:59px;
     }
 }
 
-
 .headerNumbers{
-    display: flex;
+    display:flex;
     flex-direction: column;
     gap:13px;
     position: absolute;
-    top:96px;
-    right:44px;
-    align-items: right;
-    font-size: 28px;
-    font-family: 'titan one';
-    color: $color-eleventh;
-   
+    top:94px;
+    right:34px;
+     
 
     @media screen and (max-width: 767px){
-        display:none;
-    }
-
+         display:none;
+        }
+        
     @media screen and (min-width: 1280px){
         gap:15px;
         top:156px;
-        right: 97px;
-        font-size: 46px;
+        right: 97px;    
     }
-     
-    &__cafes{
-        position: relative;
-        // border: 1px solid black;
-        text-align: center;
+
+    &__item{
         width: 51px;
         height: 43px;
-        z-index: 6;
-        
-            
-
-        @media screen and (min-width: 1280px){
-            width: 92px;
-            height: 76px
-        }
-        
-
-        &::after{
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background-color: $color-first;
-            right: 0px;
-            
-
-            @media screen and (min-width: 1280px){
-                width: 30px;
-                height: 30px
-            }      
-        }
-
-        &::before{
-            content:"cafes";
-            color:$color-first;
-            position: absolute;
-            font-size: 8px;
-            line-height: 1,25;
-            bottom: 0px;
-            right: 10px;
-            font-family: 'DM Sans';  
-            
-            @media screen and (min-width: 1280px){
-                font-size: 14px;
-                right:18px;
-            }
-        }
-       
-    }
-    &__foodtracks{
         position: relative;
-        width: 51px;
-        height: 43px;
-        // border: 1px solid black;
-        text-align: center;
-
-        @media screen and (min-width: 1280px){
-        width: 92px;
-        height: 76px
-        }
-
-        &::after{
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background-color: $color-first;
-            right: 0px;
-            
-            @media screen and (min-width: 1280px){
-                width: 30px;
-                height: 30px
-            }
-        }
-
-        &::before{
-            content:"food tracks";
-            color:$color-first;
-            position: absolute;
-            font-size: 8px;
-            bottom: 0px;
-            left: -8px;
-            font-family: 'DM Sans';   
-            
-            @media screen and (min-width: 1280px){
-                font-size: 14px;
                 
+        @media screen and (min-width: 1280px){
+              width: 92px;
+              height: 77px
             }
-        }
+    }
+    &__elipse{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $color-first;
+        right: 0px;
+
+        @media screen and (min-width: 1280px){
+            width: 30px;
+            height: 30px
+            }
+    }
+    &__number{
+        font-family: 'Titan One';
+        font-size: 28px;
+        position: absolute;
+        right: 8px;
+        top:2px;
+        letter-spacing: 0.04em;
+        color: $color-eleventh;
+
+        @media screen and (min-width: 1280px){
+            font-size: 46px;
+            right:18px;
+            top:4px;
+            line-height: 53px;
+            
+            }
+    }
+
+    &__desc{
+        font-family: 'DM Sans';
+        font-size: 8px;
+        line-height: 10px;
+        position: absolute;
+        bottom:0px;
+        right: 8px;
+        color: $color-first;
+        letter-spacing: 0;
+
+        @media screen and (min-width: 1280px){
+            font-size: 14px;
+            line-height: 18px;
+            right: 18px;
+            }
+
+        
     }
 }
+
+
+
