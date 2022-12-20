@@ -1,11 +1,12 @@
 .about{
     width: 100vw;
-    height: 1000px;
+    height: 1100px;
     background-color: $color-third;
     padding-top: 125px;
     position: relative;
+    z-index: 0;
     @media screen and (min-width: 768px) {
-        height: 786px;
+        height: 795px;
 }
     @media screen and (min-width: 1280px) {
         height: 850px;
@@ -15,13 +16,14 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin:0 auto;
+    margin: 0 auto;
     text-align: center;
     width: 220px;
     text-transform: uppercase;
     font-weight: 400;
     font-family: 'Titan One';
     padding: 0;
+    z-index: 2;
     @media screen and (min-width: 768px){
         width: 450px;
     }
@@ -52,6 +54,7 @@
             font-size: 48px;
             line-height: 55px;
             letter-spacing: 0.04em;
+            margin-bottom: 50px;
 }
          @media screen and (min-width: 1280px) {
             font-size: 58px;
@@ -68,6 +71,7 @@
     width: 280px;
     height: 279px;
     margin: 0 auto;
+    z-index: 2;
     @media screen and (min-width: 768px) {
         width: 340px;
         height: 339px;
@@ -90,15 +94,19 @@
     font-size: 12px;
     line-height: 19px;
     margin: 0 auto;
+    z-index: 3;
+    padding-top: 50px;
     @media screen and (min-width: 768px) {
         font-size: 14px; 
         width: 340px; 
         margin-left:0;
+        line-height: 26px;
 }
     @media screen and (min-width: 1280px) {
         font-size: 16px;
         width: 463px; 
         margin-left:0;
+        line-height: 28px;
 }
     &--first{
         color: $color-sixteenth;
@@ -107,11 +115,24 @@
     &--second{
         color: $color-fifteenth;
         margin-bottom: 30px;
+        @media screen and (min-width: 1280px) {
+            font-size: 14px;
+            line-height: 27px;
+        }
+    }
+    &--third{
+        color: $color-fifteenth;
+        margin-bottom: 62px;
+        @media screen and (min-width: 1280px) {
+            font-size: 14px;
+            line-height: 27px;
+    }
     }
 }
 .about__display{
     display: flex;
     flex-direction: column;
+    z-index: 2;
     @media screen and (min-width: 768px) { 
         flex-direction: row;
         
@@ -120,6 +141,25 @@
         flex-direction: row;
         
         
+}
+}
+.about__backgroundimg{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 133px;
+    top: 766px;
+    @media screen and (min-width: 768px) { 
+        display: none;
+        
+    }
+    @media screen and (min-width: 1280px) {
+        display: block;
+        width:100vw;
+        position: absolute;
+        z-index: 1;
+        height: 534px;
+        top: 342px;       
 }
 }
 
