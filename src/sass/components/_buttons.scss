@@ -99,19 +99,26 @@
 .about__button{
     width: 176px;
     height: 44px;
-    margin: 0 auto;
+    position: absolute;
+    left:70px;
     background-color: $color-first;
     border-radius: 22px;
     display: flex;
+    text-align: center;
     align-items: center;
-    margin-bottom: 39px;
     border-style: none;
     padding-left: 40px;
+    cursor: pointer;
      @media screen and (min-width: 768px) {
-        left: 396px;
+        position: absolute;
+        left: 430px;
+       
 }
     @media screen and (min-width: 1280px) {
-        left: 702px;
+        position: absolute;
+        left: 770px;
+        top: 700px;
+        z-index: 4;
 }
     &--label{
         font-family: 'DM Sans';
@@ -127,6 +134,11 @@
     }
     &--icon{
         fill: $color-eleventh;
+    }
+    &:hover,
+    &:focus{
+       background-color: $color-fifth;
+       border-style: none; 
     }
 }
 
