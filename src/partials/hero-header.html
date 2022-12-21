@@ -129,6 +129,77 @@
 
     </div>
     </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="box">
+        <button type="button" class="box__btn" data-modal-close>
+            <svg class="box__icon" height="15" width="15">
+                <use href="./images/icons/symbol-defs (6).svg#icon-X-close-modal""></use>
+            </svg>
+        </button>
+        <form>
+            <legend class="box__title">Zostaw swoje dane w formularzu poniżej</legend>
+            <fieldset class="form">
+                <label class="form__title" for="name">Imie</label>
+                <!-- <svg class="form__svg" width="18" height="18">
+                    <use href="./images/icons.svg#person-box"></use>
+                </svg> -->
+                <input class="form__input" type="text" name="name" id="name" />
+            </fieldset>
+            <fieldset class="form">
+                <label class="form__title" for="phone">Telefon</label>
+                <!-- <svg class="form__svg" width="18" height="18">
+                    <use href="./images/icons.svg#phone-box"></use>
+                </svg> -->
+                <input class="form__input" type="tel" name="phone" id="phone" />
+            </fieldset>
+            <fieldset class="form">
+                <label class="form__title" for="email">Email</label>
+                <!-- <svg class="form__svg" width="18" height="18">
+                    <use href="./images/icons.svg#envelope-box"></use>
+                </svg> -->
+                <input class="form__input" type="email" name="email" id="email" />
+            </fieldset>
+            <p>Choose what you want:</p>
+            <label>
+                <input type="radio" name="text" value="icecream" class="form__radio"/>
+                IceCream
+            </label>
+            <label>
+                <input type="radio" name="text" value="icecoffee" class="form__radio"/>
+                IceCoffee
+            </label>
+            <label>
+                <input type="radio" name="text" value="milkshake" class="form__radio"/>
+                Milkshake
+            </label>
+            <div class="form__select">
+            <label for="fav">Choose payment method</label>
+            <input  class="form__option" list="browsers" name="fav" id="fav" />
+            <datalist id="browsers">
+                <option>MasterCard</option>
+                <option>Visa</option>
+                <option>PayU</option>
+                <option>PayPal</option>
+                <option>GooglePay</option>
+            </datalist>
+            </div>
+            <!-- <fieldset class="form form--comment">
+                <label class="form__title" for="comment">Komentarz</label>
+                <textarea class="form__textarea" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+            </fieldset> -->
+            <fieldset class="accept">
+                <label class="accept__text">
+                    <input type="checkbox" />
+                    Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+                </label>
+            </fieldset>
+            <button type="button" class="header-menu__button accept__button" href="../index.html">
+                <span class="header-menu__span accept-pay">Pay</span>
+            </button>
+        </form>
+    </div>
+</div>
+  
 </header>
 
 
