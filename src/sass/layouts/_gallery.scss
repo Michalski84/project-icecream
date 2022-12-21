@@ -1,33 +1,28 @@
-.container {
+.gallery__container {
     width: 100%;
     margin: 0 auto;
 
     @media screen and (min-width: 480px) {
-        width: 480px;
+        width: 100vw;
     }
-
     @media screen and (min-width: 768px) {
-        width: 768px;
+        width: 100vw;
     }
-
     @media screen and (min-width: 1280px) {
-        width: 1280px;
+        width: 100vw;
     }
 }
 .gallery_box{
     display:flex;
-    // max-width: 100%;
-    width: 1600px;
-    // height: 48px;
-    // padding-top:97px;
-    background-color: red;
+    max-width: 100%;
+    background-image:linear-gradient(180deg,
+    $color-third,
+    $color-third 40%,
+    $color-first 40%,
+    $color-first 100%);
     justify-content: center;
 }
 .team-image{
-    
-    padding-inline:20px;
-    // margin-inline:20px;
-    //    margin-top:97px;
-    max-width: 100%;
-    // width: 1600px;
-   }
+      padding-inline:20px;
+       max-width: 100%;
+      }
