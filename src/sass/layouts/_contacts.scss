@@ -290,7 +290,7 @@ screen and (min-resolution: 3dppx) {
     /*  Wyśrodkuj i ustaw z-index */
     position: fixed;
     top: 50%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 30;
     /* Powinien być wyższy niż podłoże*/
@@ -299,19 +299,9 @@ screen and (min-resolution: 3dppx) {
     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
     text-align: center;
     padding: 30px;
-    border-radius: 3px;
+    border-radius: 10px;
     background-color: #fff;
     transition: 0.3s all;
-}
-@media screen and (min-width: 768px) {
-    .modal {
-    left: 40%;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .modal {
-        left: 50%;
-    }
 }
 .modal.active,
 .overlay.active {
@@ -320,8 +310,8 @@ screen and (min-resolution: 3dppx) {
 }
 
 .modal__cross {
-    width: 14px;
-    height: 14px;
+    width: 17px;
+    height: 17px;
     position: absolute;
     top: 15px;
     right: 15px;
