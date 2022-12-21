@@ -198,12 +198,14 @@ display: flex;
 }
 .headerGirl{
     position: absolute;
-    bottom:0px;
-    right:34px;
     z-index: 1;
+    display:none;
 
-    @media screen and (max-width: 767px){
-        display:none;
+    @media screen and (min-width: 768px){
+        display: block;
+        bottom:0px;
+        right:34px;
+        
     }
     @media screen and (min-width: 1280px){
         right:109px;
@@ -215,12 +217,13 @@ display: flex;
 }
 .headerMilk{
     position: absolute;
-    bottom:28px;
-    left:34px;
+    display:none;
     z-index: 1;
 
-    @media screen and (max-width: 767px){
-        display:none;
+    @media screen and (min-width: 768px){
+        bottom:28px;
+        left:34px;
+        display: block;
     }
     @media screen and (min-width: 1280px){
         bottom:45px;
@@ -239,11 +242,13 @@ color: $color-first;
 width: 121px;
 height: 48px;
 position: absolute;
-left:154px;
-bottom:59px;
+display:none;
 
-@media screen and (max-width: 767px){
-    display:none;
+
+@media screen and (min-width: 768px){
+    left:154px;
+    bottom:59px;
+    display: block;
 }
 @media screen and (min-width: 1280px){
     left:295px;
@@ -256,12 +261,13 @@ bottom:59px;
 }
 .headerArrow{
     position: absolute;
-    bottom:34px;
-    left:154px;
+    display:none;
     z-index: 1;
 
-    @media screen and (max-width: 767px){
-        display:none;
+    @media screen and (min-width: 768px){
+        bottom:34px;
+        left:154px;
+        display: block;
     }
     @media screen and (min-width: 1280px){
         
@@ -274,18 +280,20 @@ bottom:59px;
     }
 }
 .headerNav{
-    display:flex;
+    
     gap:35px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
     position: absolute;
-    top:50px;
-    left:355px;
+    display:none;
+    
     z-index: 5;
 
-    @media screen and (max-width: 1279px){
-        display:none;
+    @media screen and (min-width: 1280px){
+        top:50px;
+        left:355px;
+        display:flex;
     }
 
     &__item{
@@ -306,8 +314,8 @@ bottom:59px;
     color: $color-eleventh;
     font-weight: 700;
     position: absolute;
-    top:38px;
-    right: 34px;
+    display:none;
+    
     cursor: pointer;
 
     &:hover,
@@ -315,8 +323,10 @@ bottom:59px;
         background-color:$color-fifth;
     }
 
-    @media screen and (max-width: 767px){
-        display:none;
+    @media screen and (min-width: 768px){
+        top:38px;
+    right: 34px;
+    display: block;
     }
     @media screen and (min-width: 1280px){
         right:115px;
@@ -328,12 +338,14 @@ bottom:59px;
     flex-direction: column;
     gap:13px;
     position: absolute;
-    top:94px;
-    right:34px;
+    display:none;
+    
      
 
-    @media screen and (max-width: 767px){
-         display:none;
+    @media screen and (min-width: 768px){
+        top:94px;
+        right:34px;
+        display: block;
         }
         
     @media screen and (min-width: 1280px){
