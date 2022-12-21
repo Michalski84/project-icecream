@@ -16,15 +16,18 @@
 }
 .gallery_box{
     display:flex;
-    margin-inline:0;
     // max-width: 100%;
     width: 1600px;
     // height: 48px;
     // padding-top:97px;
-
+    background-color: red;
+    justify-content: center;
 }
 .team-image{
-       margin-top:97px;
+    
+    padding-inline:20px;
+    // margin-inline:20px;
+    //    margin-top:97px;
     max-width: 100%;
     // width: 1600px;
    }
