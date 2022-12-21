@@ -216,7 +216,8 @@
 .slick-dots li button:before {
   background-color: $color-sixteenth;
   border-radius: 50%;
-
+  width: 12px;
+  height: 12px;
 }
 
 .slick-dots li.slick-active button:before {
@@ -227,14 +228,3 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-// .slider {
-//   position: relative;
-// }
-// .slick-arrow {
-//   position: absolute;
-//   top: 0;
-//   @media screen and (min-width: 768px) {
-//       top: 50;
-//       left: 150;
-//     }
-// }
