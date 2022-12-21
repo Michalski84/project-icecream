@@ -50,6 +50,8 @@
 .footer__link--icon-secondary,
 .footer__link--icon-tertiary {
   fill: #fea5bb;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__link--icon-primary:hover,
 .footer__link--icon-secondary:hover,
