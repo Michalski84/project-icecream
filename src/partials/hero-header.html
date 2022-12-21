@@ -169,10 +169,36 @@
                 <input class="form__input" type="email" name="email" id="email" />
             </fieldset>
 
-            <fieldset class="form form--comment">
+            <p>Choose what you want:</p>
+            <label>
+                <input type="radio" name="text" value="icecream" class="form__radio"/>
+                IceCream
+            </label>
+            <label>
+                <input type="radio" name="text" value="icecoffee" class="form__radio"/>
+                IceCoffee
+            </label>
+            <label>
+                <input type="radio" name="text" value="milkshake" class="form__radio"/>
+                Milkshake
+            </label>
+
+            <div class="form__select">
+            <label for="fav">Choose payment method</label>
+            <input  class="form__option" list="browsers" name="fav" id="fav" />
+            <datalist id="browsers">
+                <option>MasterCard</option>
+                <option>Visa</option>
+                <option>PayU</option>
+                <option>PayPal</option>
+                <option>GooglePay</option>
+            </datalist>
+            </div>
+
+            <!-- <fieldset class="form form--comment">
                 <label class="form__title" for="comment">Komentarz</label>
                 <textarea class="form__textarea" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
-            </fieldset>
+            </fieldset> -->
 
             <fieldset class="accept">
                 <label class="accept__text">
