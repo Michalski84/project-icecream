@@ -396,3 +396,92 @@ only screen and (min-resolution: 2dppx) and (min-width:1280px) {
 
 
 
+/* MODAL STYLE */
+.overlay {
+
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 20;
+    transition: .3s all;
+}
+
+.modal {
+
+    /* Ukrywanie okien  */
+    opacity: 0;
+    visibility: hidden;
+
+
+    /*  Ustaw szerokość okna  */
+    width: 95vw;
+    max-width: 600px;
+
+    /*  Wyśrodkuj i ustaw z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /* Powinien być wyższy niż podłoże*/
+
+    /*  Style boczne   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s all;
+}
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__cross {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    fill: currentColor;
+    background-color: $color-tenth;
+    border-radius: 50px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.modal__img {
+    width: 90%;
+    height: 20%;
+}
+
+.modal__title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .modal__title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal__title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+
+
