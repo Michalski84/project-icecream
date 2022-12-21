@@ -209,6 +209,9 @@
   margin: 0 auto;
 }
 
+.slick-dots {
+  position: relative;
+}
 .slick-dots li button:before {
   background-color: $color-sixteenth;
   border-radius: 50%;
