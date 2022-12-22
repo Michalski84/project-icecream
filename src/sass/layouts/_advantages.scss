@@ -1,18 +1,19 @@
-.advantages-box {
+.advantages-box__background {
   background-color: $color-third;
-  width: 100vw;
-  padding-top: 40px;
-  padding-bottom: 80px;
+    width: 100vw;
+}
+.advantages-box.container {
+  padding-top: 105px;
+  padding-bottom: 97px;
 }
 .advantages-box__title {
   display: none;
 }
 .advantages-box__list {
   display: flex;
-  padding-top: 39px;
-
   flex-direction: column;
   justify-content: flex-start;
+  gap: 104px;
   padding-left: 30px;
 }
 .advantages-box__number {
@@ -23,191 +24,236 @@
   flex-direction: column;
   color: $color-eleventh;
   font-family: 'Titan One';
-
   font-size: 36px;
 }
+
 
 .advantages-box__text {
   font-weight: 700;
   font-size: 12px;
-  padding-top: 10px;
-  width: 100vw;
+  margin-top:4px;
+  // width: 100vw;
   line-height: 1.16;
   font-family: 'DM Sans';
-  width: 230px;
+  
 }
 .advantages-box__item {
   position: relative;
-  padding-top: 20px;
+  width: 230px;
 }
-.advantages-box__item--position {
-  padding-bottom: 20px;
-}
+
 .advantages-box__bucket-one::after {
-  content: url('../images/Advantages/bucket-one-mobile-1x.png');
+  background-size: 33px 50px;
+  content:" ";
+  background-image: url('../images/Advantages/bucket-one-mobile-1x.png');
   position: absolute;
-  left: 9px;
-  top: -44px;
-  width: 30px;
+  top: -86;
+  left:0;
+  width: 33px;
   height: 50px;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .advantages-box__bucket-one::after {
-    content: url('/src/images/Advantages/bucket-one-mobile-2x.png');
+    background-image: url('../images/Advantages/bucket-one-mobile-2x.png');
+    background-size: 33px 50px;
   }
 }
-.advantages-box__bucket-two {
-  padding-top: 38px;
-}
+
 .advantages-box__bucket-two::after {
-  content: url('../images/Advantages/bucket-two-mobile-1x.png');
+  background-size: 50px 50px;
+  content:" ";
+  background-image: url('../images/Advantages/bucket-two-mobile-1x.png');
   position: absolute;
-  width: 30px;
+  left: 0;
+  top: -86;
+  width: 50px;
   height: 50px;
-  left: 18px;
-  top: -3px;
+  
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .advantages-box__bucket-two::after {
-    content: url('/src/images/Advantages/bucket-two-mobile-2x.png');
+    background-image: url('../images/Advantages/bucket-two-mobile-2x.png');
+    background-size: 50px 50px;
   }
 }
-.advantages-box__heart {
-  padding-top: 66px;
-}
-
 .advantages-box__heart::after {
-  content: url('../images/Advantages/heart-mobile-1x.png');
+  background-size: 44px 50px;
+  content: " ";
+  background-image: url('../images/Advantages/heart-mobile-1x.png');
   position: absolute;
-  width: 30px;
+  left: 0;
+  top: -86;
+  width: 44px;
   height: 50px;
-  left: 2px;
-  top: 21px;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .advantages-box__heart::after {
-    content: url('/src/images/Advantages/heart-mobile-2x.png');
+    background-image: url('../images/Advantages/heart-mobile-2x.png');
+    background-size: 44px 50px;
   }
 }
+// -----------------MEDIA 768 ----------------------------------------
 @media (min-width: 768px) {
-  .advantages-box {
-    padding-top: 0;
-    padding-bottom: 80px;
+  .advantages-box.container {
+      padding-top: 152px;
+      padding-bottom: 140px;
+    }
+  
+.advantages-box__list {
+    margin-top: 152px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+.advantages-box__number {
+  font-size: 48px;
+}
+.advantages-box__text {
+  max-width: 180px;
+}
+.advantages-box__item {
+  max-width: 160px;
+}
   .advantages-box__bucket-one::after {
-    content: url('../images/Advantages/bucket-one-tablet-1x.png');
-    top: 91px;
-    left: 17px;
+    background-size: 33px 50px;
+    background-repeat: no-repeat;
+    content: '';
+    background-image: url('../images/Advantages/bucket-one-tablet-1x.png');
+    position: absolute;
+    top: -86;
+    left: 0;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advantages-box__bucket-one::after {
-      content: url('/src/images/Advantages/bucket-one-tablet-2x.png');
+      background-image: url('../images/Advantages/bucket-one-tablet-2x.png');
+      background-size: 33px 50px;
     }
   }
+  
   .advantages-box__bucket-two::after {
+    background-size: 50px 50px;
     content: url('../images/Advantages/bucket-two-tablet-1x.png');
-    top: 94px;
-    left: 27px;
+    position: absolute;
+    top: -86;
+    left: 0;
+    width: 50px;
+    height: 50px;
   }
+  
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advantages-box__bucket-two::after {
-      content: url('/src/images/Advantages/bucket-two-tablet-2x.png');
+      background-image: url('../images/Advantages/bucket-two-tablet-2x.png');
+      background-size: 50px 50px;
     }
   }
   .advantages-box__heart::after {
-    content: url('../images/Advantages/heart-tablet-1x.png');
-    top: 89px;
-    left: 9px;
+    background-size: 44px 50px;
+    content: '';
+    background-image: url('../images/Advantages/heart-tablet-1x.png');
+    position: absolute;
+    top: -86;
+    left: 0;
+    width: 44px;
+    height: 50px;
   }
+  
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advantages-box__heart::after {
-      content: url('/src/images/Advantages/heart-tablet-2x.png');
+      background-image: url('../images/Advantages/heart-tablet-2x.png');
+      background-size: 44px 50px;
     }
   }
-  .advantages-box__list {
-    flex-direction: row;
-  }
 
-  .advantages-box__item--position {
-    padding-top: 140px;
-  }
   .advantages-box__number {
     font-size: 48px;
   }
-  .advantages-box__number--position {
-    padding-top: 20px;
-  }
-  .advantages-box__heart {
-    padding-top: 19px;
-  }
-  .advantages-box__bucket-two {
-    padding-top: 145px;
-  }
+
 }
 
+
+// -----------------MEDIA 1280
+
+
+
 @media (min-width: 1280px) {
-  .advantages-box {
-    padding-top: 0;
-    padding-bottom: 80px;
-  }
+  .advantages-box.container {
+      padding-top: 64px;
+      padding-bottom: 139px;
+    }
   .advantages-box__text {
-    flex-wrap: wrap;
     font-size: 16px;
   }
   .advantages-box__list {
     gap: 30px;
   }
+    .advantages-box__number {
+      font-size: 58px;
+    }
   .advantages-box__bucket-one::after {
-    content: url('../images/Advantages/bucket-one-1x.png');
-    top: 87px;
-    left: 19px;
+    background-size: 33px 50px;
+    background-repeat: no-repeat;
+    content: '';
+    background-image: url('../images/Advantages/bucket-one-1x.png');
+    position: absolute;
+    top: -90;
+    left: 0;
+    width: 50px;
+    height: 50;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advantages-box__bucket-one::after {
-      content: url('/src/images/Advantages/bucket-one-2x.png');
-      bottom: 40px;
+      background-size: url('../images/Advantages/bucket-one-2x.png');
+      background-size: 33px 50px;
     }
   }
   .advantages-box__bucket-two::after {
-    content: url('../images/Advantages/bucket-two-1x.png');
-    top: 90px;
-    left: 34px;
+    background-size: 50px 50px;
+    content: '';
+    background-image: url('../images/Advantages/bucket-two-1x.png');
+    position: absolute;
+    top: -90;
+    left: 0;
+    width: 50px;
+    height: 50px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advantages-box__bucket-two::after {
-      content: url('/src/images/Advantages/bucket-two-2x.png');
+      background-image: url('../images/Advantages/bucket-two-2x.png');
+      background-size: 50px 50px;
     }
   }
   .advantages-box__heart::after {
-    content: url('../images/Advantages/heart-1x.png');
-    top: 85px;
-    left: 11px;
+    background-size: 44px 50px;
+    content: '';
+    background-image: url('../images/Advantages/heart-1x.png');
+    position: absolute;
+    top: -86;
+    left: 0;
+    width: 44px;
+    height: 50px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advantages-box__heart::after {
-      content: url('/src/images/Advantages/heart-2x.png');
+      background-image: url('../images/Advantages/heart-2x.png');
+      background-size: 44px 50px;
     }
-  }
-  .advantages-box__list {
-    align-items: center;
-    justify-content: center;
   }
 }

@@ -29,6 +29,7 @@
 
   @media screen and (min-width: 768px) {
     width: 100%;
+    max-width: 768px;
     height: 164px;
     background-color: rgba($color-second, 0.4);
   }
@@ -209,10 +210,14 @@
   margin: 0 auto;
 }
 
+.slick-dots {
+  position: relative;
+}
 .slick-dots li button:before {
   background-color: $color-sixteenth;
   border-radius: 50%;
-
+  width: 12px;
+  height: 12px;
 }
 
 .slick-dots li.slick-active button:before {
@@ -222,9 +227,4 @@
   background-color: $color-first;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.slick-arrow {
-  position: fixed;
-  top: 0;
 }
