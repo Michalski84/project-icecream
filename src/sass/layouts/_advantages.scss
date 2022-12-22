@@ -114,13 +114,11 @@
   font-size: 48px;
 }
 .advantages-box__text {
-  font-size: 14px;
-  line-height: 1.71;
+  max-width: 180px;
 }
 .advantages-box__item {
   max-width: 180px;
 }
-
   .advantages-box__bucket-one::after {
     background-size: 33px 50px;
     background-repeat: no-repeat;
@@ -194,12 +192,14 @@
       padding-bottom: 139px;
     }
   .advantages-box__text {
-    flex-wrap: wrap;
     font-size: 16px;
   }
   .advantages-box__list {
     gap: 30px;
   }
+    .advantages-box__number {
+      font-size: 58px;
+    }
   .advantages-box__bucket-one::after {
     background-size: 33px 50px;
     background-repeat: no-repeat;
