@@ -1,24 +1,24 @@
 .about{
     width: 100vw;
-    height: 1100px;
     background-color: $color-third;
     background-image: url(../images/About/milk-1x.png);
     background-repeat: no-repeat;
     background-size: 100% 15%;
     background-position: 0 766px;
     padding-top: 125px;
+    padding-bottom: 70px;
     position: relative;
     z-index: 0;
     @media screen and (min-width: 768px) {
-        height: 795px;
         background-image: none;
+        padding-bottom: 70px;
 }
     @media screen and (min-width: 1280px) {
-        height: 850px;
         background-image: url(../images/About/milk-1x.png);
         background-repeat: no-repeat;
         background-size: 100% 68%;
-        background-position: 0 342px;
+        background-position: 0 300px;
+        padding-bottom: 0px;
 }
 }
 .about__container{
