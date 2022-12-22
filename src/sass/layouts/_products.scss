@@ -440,6 +440,144 @@ only screen and (min-resolution: 2dppx) and (min-width:1280px) {
     transition: 0.3s all;
 }
 
+.modal.modal__card {
+    max-width: 440px;
+}
+
+.modal__card {
+    background: linear-gradient(-45deg, $color-eighth, $color-fourteenth);
+    background-size: 400% 400%;
+    animation: colors 3s infinite;
+    height: 500px;
+    position: relative;
+    &-title {
+        font-family: 'Titan One';
+            text-align: center;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 1.13;
+            letter-spacing: 0.03em;
+            color: $color-twelfth;
+    }
+    &-text {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.13;
+    letter-spacing: 0.03em;
+    }
+    &-accent {
+        color: $color-twelfth;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .modal__card-text {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal__card-text {
+        margin-top: 50px;
+    }
+}
+
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 30;
+        left: 50%;
+        transform: translateX(-50%);
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.14;
+        color: $color-sixteenth;
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        display: flex;
+        width: 95vw;
+        max-width: 450px;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+
+    &__input {
+        width: 95%;
+        max-width: 300px;
+        height: 38px;
+        font-size: 16px;
+        line-height: 1.25;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid $color-eleventh;
+        border-radius: 4px;
+        padding: 20px;
+
+    }
+
+    &__btn {
+        width: 200px;
+        height: 50px;
+        background-color: $color-eleventh;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+        color: $color-first;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .modal.active,
 .overlay.active {
     opacity: 1;
