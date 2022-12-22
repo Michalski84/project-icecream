@@ -32,13 +32,14 @@
   font-weight: 700;
   font-size: 12px;
   margin-top:4px;
-  width: 100vw;
+  // width: 100vw;
   line-height: 1.16;
   font-family: 'DM Sans';
-  width: 230px;
+  
 }
 .advantages-box__item {
   position: relative;
+  width: 230px;
 }
 
 .advantages-box__bucket-one::after {
@@ -117,7 +118,7 @@
   max-width: 180px;
 }
 .advantages-box__item {
-  max-width: 180px;
+  max-width: 160px;
 }
   .advantages-box__bucket-one::after {
     background-size: 33px 50px;
